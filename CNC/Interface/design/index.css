@@ -1,18 +1,35 @@
-aside {
-	position: fixed;
-	left: 0;
+header{
+	position: absolute;
+	top: auto;
+	left: auto;
+}
+
+body{
 	background-color: #000000;
 	font: green;
 	color: green;
+}
+
+aside {
+	position: fixed;
+	width: 20%;
+	left: 0;
+	top: 10%
+	
 }
 /*wollte eigendlich die ganze seite Schwarz grün machen aber die aufgabe sagt nur menü...*/
 
 main {
 	position: absolute;
+	width: 80%;
 	right: 0;
+	left: auto;
+	top: 10%;
+	bottom: auto;
 	overflow: auto; 	/*wenn der inhalt zu groß wird wird je nach browser einstellung durch das :auto anderst gehandelt
 						meist sollte es aber Scroll sein*/
 }
+
 
 a:hover { /*ja ich weiss das hover ist jetzt nicht nur für menü aber in der theorie kommen ja nur da liks rein ;)*/
 	color: red;
