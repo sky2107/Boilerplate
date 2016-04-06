@@ -1,7 +1,8 @@
 header{
 	position: absolute;
-	top: auto;
+	top: 0;
 	left: auto;
+	height: 10%;
 }
 
 body{
@@ -13,21 +14,34 @@ body{
 aside {
 	position: fixed;
 	width: 20%;
+	height: 90%;
 	left: 0;
 	top: 10%
-	
 }
 /*wollte eigendlich die ganze seite Schwarz grün machen aber die aufgabe sagt nur menü...*/
 
 main {
 	position: absolute;
 	width: 80%;
+	height: 90%;
 	right: 0;
 	left: auto;
 	top: 10%;
-	bottom: auto;
 	overflow: auto; 	/*wenn der inhalt zu groß wird wird je nach browser einstellung durch das :auto anderst gehandelt
 						meist sollte es aber Scroll sein*/
+}
+
+main>status{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+main>tasks{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 100%;
 }
 
 
