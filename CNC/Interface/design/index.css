@@ -34,6 +34,11 @@ menu a:hover {
 	color: red;
 }
 
+/*einstellungen für den zuletzt ausgewählten link*/
+menu a:focus{
+	background-color: #330000;
+}
+
 /*hauptteil*/
 main {
 	background-color: #333333;
@@ -58,17 +63,14 @@ tr:hover{
 	background-color: #000000;
 }
 
-main #status{
-	position: absolute;
-	width: 100%;
-	height: 100%;
+/*Für nicht ausgewählten inhalt*/
+section.content{
+	display: none;
 }
 
-main #tasks{
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 100%;
+/*Für ausgewählten inhalt*/
+section.content:target{
+	display: block;
 }
 
 /*Liste*/
@@ -88,6 +90,7 @@ a{
 	color: green;
 	text-decoration: none;
 }
+
 /*Fuß zeile*/
 footer{
 	background-color: #333333;
