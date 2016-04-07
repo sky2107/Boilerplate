@@ -1,54 +1,99 @@
-header{
-	position: absolute;
-	top: 0;
-	left: auto;
-	height: 10%;
-}
-
+/*Grunddesign*/
 body{
 	background-color: #000000;
 	font: green;
 	color: green;
 }
 
-aside {
-	position: fixed;
-	width: 20%;
-	height: 90%;
-	left: 0;
-	top: 10%
-}
-/*wollte eigendlich die ganze seite Schwarz grün machen aber die aufgabe sagt nur menü...*/
-
-main {
+/*Kopfzeile*/
+header{
+	background-color: #333333;
+	text-align:center;
 	position: absolute;
-	width: 80%;
-	height: 90%;
+	left: 0;
 	right: 0;
-	left: auto;
-	top: 10%;
-	overflow: auto; 	/*wenn der inhalt zu groß wird wird je nach browser einstellung durch das :auto anderst gehandelt
-						meist sollte es aber Scroll sein*/
+	top: 0;
+	height: 10%;
+	width: 100%;
 }
 
-main>status{
+/*linke seite*/
+menu {
+	background-color: #333333;
+	position: fixed;
+	width: 14%;
+	height: auto;
+	left: 0;
+	top: 10%;
+	padding: 0;
+	margin: 0;
+}
+
+/*Hover von links im menü*/
+menu a:hover {
+	color: red;
+}
+
+/*hauptteil*/
+main {
+	background-color: #333333;
+	position: absolute;
+	width: 45%;
+	height: 25%;
+	right: 0;
+	left: 55%;
+	top: 10%;
+	overflow: auto;
+}
+
+/*Tabelle*/
+#status-overview,thead,tbody,th,tr,td{
+	border: 1px solid;
+    border-collapse: collapse;
+	text-align: center;
+}
+
+/*Zeile beim Hovern*/
+tr:hover{
+	background-color: #000000;
+}
+
+main #status{
 	position: absolute;
 	width: 100%;
 	height: 100%;
 }
 
-main>tasks{
+main #tasks{
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	top: 100%;
 }
 
-
-a:hover { /*ja ich weiss das hover ist jetzt nicht nur für menü aber in der theorie kommen ja nur da liks rein ;)*/
-	color: red;
+/*Liste*/
+ul{
+	padding: 10;
+	float: left;
 }
 
+/*unterpunkte der liste*/
+li {
+	padding: 0;
+    list-style-type: none;
+}
+
+/*allgemeine einstellungen für links*/
 a{
 	color: green;
+	text-decoration: none;
+}
+/*Fuß zeile*/
+footer{
+	background-color: #333333;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 5%;
 }

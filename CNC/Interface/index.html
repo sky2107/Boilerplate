@@ -20,8 +20,10 @@
 </header>
 <aside>
     <menu>
-        <li><a href="#status">Status</a></li>
-        <li><a href="#tasks">Tasks</a></li>
+		<ul>
+			<li><a href="#status">Status</a></li>
+			<li><a href="#tasks">Tasks</a></li>
+		</ul>
     </menu>
 </aside>
 <main>
@@ -33,10 +35,21 @@
                 <th>IP</th>
                 <th>Task</th>
                 <th>Status</th>
+				<th>Start/Stop</th>
             </tr>
             </thead>
             <tbody>
-                <tr>No BOTS active yet</tr>
+                <tr>
+					<td colspan=4> No BOTS active yet</td>
+					<td><button type="button" id="onoff">Start</button></td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>2a02:8071:aa2:fa00:910d:8f43:8516:a59/64</td>
+					<td>0</td>
+					<td>4</td>
+					<td><button type="button" id="onoff">Start</button></td>
+				</tr>
             </tbody>
         </table>
     </section>
@@ -45,10 +58,12 @@
     </section>
 </main>
 
+<footer>Fuelltext</footer>
 
 </body>
 </html>
 <!--
+Refreshzeit nur aus testgründen so niedrig!!
 todo:
 -Interface:
 --Transition zwischen Sections (App States)
@@ -58,7 +73,6 @@ todo:
 --Buttons
 --Inhalte via http://botnet.artificial.engineering:8080/api/Status
 --Anpassung des Farbschemas und des Cell Paddings
---Transition der Zeile bei hover (hervorheben bei maus)
 --Buttons Tooglebar
 -Menu:
 --Hover und active anpassung
