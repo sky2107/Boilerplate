@@ -65,12 +65,17 @@ tr:hover{
 
 /*Für nicht ausgewählten inhalt*/
 section.content{
-	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	margin-top: -100%;
+	-webkit-transition: all 0.7s ease;
+	transition: all 0.7s ease;
 }
 
 /*Für ausgewählten inhalt*/
 section.content:target{
-	display: block;
+	margin-top:0;
 }
 
 /*Liste*/
