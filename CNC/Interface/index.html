@@ -7,9 +7,11 @@
     <meta name="keywords" content="HTML,CSS">
     <meta name="author" content="SaReLa">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="indexstylesheet" href="../../design/index.css">
-    <link rel="printstylesheet" href="../../design/print.css">
-    <title>Einfach eine Site</title>
+    <link rel="stylesheet" type="text/CSS" href="./design/index.css">
+    <link rel="stylesheet" type="text/CSS" href="./design/print.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="refresh" content="50">
+	<title>Botnet</title>
 </head>
 
 <body>
@@ -18,12 +20,14 @@
 </header>
 <aside>
     <menu>
-        <li><a href="#status">Status</a></li>
-        <li><a href="#tasks">Tasks</a></li>
+		<ul>
+			<li><a href="#status">Status</a></li>
+			<li><a href="#tasks">Tasks</a></li>
+		</ul>
     </menu>
 </aside>
 <main>
-    <section id="status">
+    <section id="status" class="content">
         <table id="status-overview">
             <thead>
             <tr>
@@ -31,18 +35,45 @@
                 <th>IP</th>
                 <th>Task</th>
                 <th>Status</th>
+				<th>Start/Stop</th>
             </tr>
             </thead>
             <tbody>
-                <tr>No BOTS active yet</tr>
+                <tr>
+					<td colspan=4> No BOTS active yet</td>
+					<td><button type="button" id="onoff" disabled="disabled">Start</button></td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>2a02:8071:aa2:fa00:910d:8f43:8516:a59/64</td>
+					<td>0</td>
+					<td>4</td>
+					<td><button type="button" id="onoff" disabled="disabled">Start</button></td>
+				</tr>
             </tbody>
         </table>
     </section>
-    <section id="tasks">
+    <section id="tasks" class="content">
         TODO:Task
     </section>
 </main>
 
+<footer>Fuelltext</footer>
 
 </body>
 </html>
+<!--
+Refreshzeit nur aus testgründen so niedrig!!
+todo:
+-Interface:
+--Transition zwischen Sections (App States)
+--GET Integration zum CNC Server ( /api/Status )
+-Tabelle:
+--Sortierbare tabelle
+--Buttons
+--Inhalte via http://botnet.artificial.engineering:8080/api/Status
+--Anpassung des Farbschemas und des Cell Paddings
+--Buttons Tooglebar
+-Menu:
+--Hover und active anpassung
+-->
