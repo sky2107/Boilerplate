@@ -95,6 +95,16 @@ a{
 	text-decoration: none;
 }
 
+/*Grundeinstellung für buttons*/
+button {
+    background-color: green;
+	width: 100%;
+	height: 100%;
+	padding: 4px;
+    border: none;
+    color: white;
+}
+
 /*Fuß zeile*/
 footer{
 	background-color: #333333;
