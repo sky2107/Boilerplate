@@ -53,12 +53,12 @@ main {
 /*Tabelle*/
 #status-overview,thead,tbody,th,tr,td{
 	border: 1px solid;
-    	border-collapse: collapse;
+    border-collapse: collapse;
 	text-align: center;
 }
 
-/*Zeile beim Hovern*/
-tr:hover{
+/*Zeile im body beim Hovern*/
+tbody tr:hover{
 	background-color: #000000;
 }
 

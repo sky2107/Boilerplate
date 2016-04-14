@@ -7,12 +7,12 @@ Desweiteren wird eine farbliche änderung bei klick erwirkt
 */
 function toogleButton(button_id){ 
 	var taste = document.getElementById(button_id);
-	if(taste.innerHTML == "Start"){
-		taste.innerHTML = "Stop";
-		taste.style.backgroundColor = "red";
+	if(taste.innerHTML == 'Start'){
+		taste.innerHTML = 'Stop';
+		taste.style.backgroundColor = 'red';
 	}
 	else{
-		taste.innerHTML = "Start";
-		taste.style.backgroundColor = "green";
+		taste.innerHTML = 'Start';
+		taste.style.backgroundColor = 'green';
 	}
 };
