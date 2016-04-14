@@ -26,7 +26,7 @@ var tabelleninhalt = function(){
 			content.innerHTML = inhalt;
 		}
 		else{
-			content.innerHTML = 'Es gab einen Fehler beim Laden der Serverliste';
+			content.innerHTML = '<tr><td colspan=5>Es gab einen Fehler beim Laden der Serverliste</td></tr>';
 		}
 	};
 	xhr.send(null);
